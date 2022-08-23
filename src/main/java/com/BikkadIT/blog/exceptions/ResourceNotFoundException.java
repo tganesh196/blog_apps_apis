@@ -11,7 +11,7 @@ public class ResourceNotFoundException extends RuntimeException {
 	String fieldName;
 	long fieldValue;
 	public ResourceNotFoundException(String resourseNsme, String fieldName, long fieldValue) {
-		super(String .format("%s npt found with %s : %1",   resourseNsme, fieldName, fieldValue));
+		super(String .format("%s npt found with %s : %s",   resourseNsme, fieldName, fieldValue));
 		this.resourseNsme = resourseNsme;
 		this.fieldName = fieldName;
 		this.fieldValue = fieldValue;
